@@ -20,7 +20,8 @@ fi
 
 export ROOTFS_PKGS=$(ls "$INIT_DIR/built-pkgs/"*"$1"*)
 export WINE_PKG=$(find "$INIT_DIR/built-pkgs" | grep "wine")
-
+chmod +x download-external-dependencies.sh
+chmod +x create-rat-pkg.sh
 ./download-external-dependencies.sh
 ./create-rat-pkg.sh "Wine-Utils" "$1" "($GIT_SHORT_SHA)" "wine-utils" "$INIT_DIR/rootfs" "$INIT_DIR"
 
@@ -31,5 +32,5 @@ if [ -f "$WINE_PKG" ]; then
 else
   echo "Warning, Wine Not Found."
 fi
-
+chmod +x cat-rat-pkgs.sh
 ./cat-rat-pkgs.sh "Tera-RootFS" "($GIT_SHORT_SHA)" "rootfs" "$1" $ROOTFS_PKGS
