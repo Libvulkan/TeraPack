@@ -459,5 +459,5 @@ cd "$INIT_DIR"
 mkdir -p "$INIT_DIR/cache/libc++_shared/files/usr/lib"
 
 cp "$INIT_DIR/cache/android-ndk-r26b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/$ARCHITECTURE-linux-android/libc++_shared.so" "$INIT_DIR/cache/libc++_shared/files/usr/lib"
-
+chmod +x create-rat-pkg.sh
 ./create-rat-pkg.sh "libc++_shared" "$ARCHITECTURE" "1.0" "library" "$INIT_DIR/cache/libc++_shared" "$INIT_DIR/built-pkgs"
