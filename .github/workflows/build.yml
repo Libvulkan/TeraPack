@@ -29,6 +29,7 @@ jobs:
     
     - name: "Start Building (x86_64)"
       run: |
+        chmod +x build-all.sh
         ./build-all.sh x86_64
         cd logs
         7z a /home/runner/MiceWine-RootFS-x86_64-Logs.zip
