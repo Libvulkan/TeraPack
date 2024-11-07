@@ -46,6 +46,7 @@ jobs:
 
     - name: "Start Building (aarch64)"
       run: |
+       chmod +x build-all.sh
         ./build-all.sh aarch64
         cd logs
         7z a /home/runner/Tera-RootFS-aarch64-Logs.zip
