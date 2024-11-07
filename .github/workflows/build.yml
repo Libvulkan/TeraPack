@@ -37,6 +37,7 @@ jobs:
         
     - name: "Create RootFS File (x86_64)"
       run: |
+       chmod +x create-rootfs.sh
         ./create-rootfs.sh x86_64
         mv "Tera-RootFS-($(git rev-parse --short HEAD))-x86_64.rat" /home/runner/Tera-RootFS-x86_64.rat
 
@@ -54,6 +55,7 @@ jobs:
 
     - name: "Create RootFS File (aarch64)"
       run: |
+       chmod +x create-rootfs.sh
         ./create-rootfs.sh aarch64
         mv "Tera-RootFS-($(git rev-parse --short HEAD))-aarch64.rat" /home/runner/Tera-RootFS-aarch64.rat
 
