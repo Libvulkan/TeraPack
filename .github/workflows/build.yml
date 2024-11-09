@@ -1,5 +1,9 @@
 name: Build and Release MiceWine RootFS
 
+
+permissions:
+  contents: write
+
 on:
   push:
     branches: "*"
