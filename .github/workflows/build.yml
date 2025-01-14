@@ -1,4 +1,4 @@
-name: Build and Release Tera RootFS
+name: Build and Release Tera RootFS yed
 
 on:
   push:
