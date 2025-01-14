@@ -9,7 +9,7 @@ if [ "$1" != "aarch64" ] && [ "$1" != "x86_64" ]; then
   exit 0
 fi
 
-export PREFIX=/data/data/com.termux/files/usr
+export PREFIX=/data/data/com.winlator/files/imagefs/usr
 export INIT_DIR=$PWD
 export GIT_SHORT_SHA=$(git rev-parse --short HEAD)
 
