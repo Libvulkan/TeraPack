@@ -30,7 +30,7 @@ symlink2sh() {
 }
 
 export INIT_DIR=$PWD
-export APP_ROOT_DIR=/data/data/com.termux/
+export APP_ROOT_DIR=/data/data/com.winlator/
 
 if [ $# -lt 6 ]; then
 	showHelp
@@ -43,7 +43,7 @@ echo "Creating Package '$1-$3-$2.rat'..."
 export WORKDIR="$5"
 
 if [ -d "$5/data/" ]; then
-	WORKDIR="$5/data/data/com.termux/"
+	WORKDIR="$5/data/data/com.winlator/"
 fi
 
 cd $WORKDIR
