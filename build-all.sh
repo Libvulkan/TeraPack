@@ -384,7 +384,7 @@ showHelp()
 	echo "	aarch64"
 }
 
-export PREFIX=/data/data/com.micewine.emu/files/usr
+export PREFIX=/data/data/com.winlator/files/imagefs/usr
 
 if [ $# -lt 1 ]; then
 	showHelp
