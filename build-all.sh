@@ -358,7 +358,7 @@ compileAll()
 				exit 0
 			fi
 
-			cp -rf "$INIT_DIR/workdir/$package/destdir-pkg/data/data/com.termux/"* "/data/data/com.termux"
+			cp -rf "$INIT_DIR/workdir/$package/destdir-pkg/data/data/com.winlator/"* "/data/data/com.winlator"
 
    			find "$INIT_DIR/workdir/$package/destdir-pkg" -type f > "$INIT_DIR/logs/$package-package-files.txt"
 
@@ -384,7 +384,7 @@ showHelp()
 	echo "	aarch64"
 }
 
-export PREFIX=/data/data/com.termux/files/usr
+export PREFIX=/data/data/com.winlator/files/imagefs/usr
 
 if [ $# -lt 1 ]; then
 	showHelp
