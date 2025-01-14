@@ -30,8 +30,7 @@ symlink2sh() {
 }
 
 export INIT_DIR=$PWD
-export APP_ROOT_DIR=/data/data/com.termux/
-
+export APP_ROOT_DIR=/data/data/com.winlator
 if [ $# -lt 6 ]; then
 	showHelp
 	exit 0
