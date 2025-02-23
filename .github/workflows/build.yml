@@ -43,7 +43,7 @@ jobs:
 
     - name: "Clean x86_64 RootFS"
       run: |
-        sudo rm -rf /data/data/com.termux/files/usr workdir rootfs
+        sudo rm -rf /data/data/com.gebox.emu/files/usr workdir rootfs
 
     - name: "Start Building (aarch64)"
       run: |
